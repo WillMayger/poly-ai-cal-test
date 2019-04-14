@@ -1,0 +1,9 @@
+.container {
+  width: 90vw;
+  margin: 80px auto 0;
+
+  @media (min-width: 1000px) {
+    width: 40vw;
+    margin: 30px auto 0;
+  }
+}

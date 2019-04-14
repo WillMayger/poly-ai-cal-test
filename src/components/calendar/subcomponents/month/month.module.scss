@@ -1,0 +1,8 @@
+.month {
+  text-align: right;
+  padding: 0 5px;
+
+  @media (min-width: 768px) {
+    padding: 0 10px;
+  }
+}

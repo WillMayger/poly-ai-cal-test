@@ -1,0 +1,10 @@
+.day {
+  composes: day from '../day/day.module.scss';
+  margin-top: 20px;
+  font-size: 1.4rem;
+
+  @media (min-width: 768px) {
+  margin-top: 50px;
+  font-size: 3rem;
+  }
+}
