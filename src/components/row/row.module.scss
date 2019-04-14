@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+
+  * {
+    flex: 1;
+    text-align: center;
+  }
+}
