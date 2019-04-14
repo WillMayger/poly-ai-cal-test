@@ -1,0 +1,13 @@
+.container {
+  composes: container from "./theme.module.scss";
+  background-color: #292d3e;
+  color: rgba(255,255,255,0.9);
+
+  h1, h2, h3, h4, h5, p, span, a {
+    color: rgba(255,255,255,0.9);
+
+    span {
+      color: #ffeb3b;
+    }
+  }
+}
