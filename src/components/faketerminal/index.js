@@ -4,19 +4,9 @@ import PropTypes from 'prop-types';
 import styles from './faketerminal.module.scss';
 import { useEvent } from '../../hooks';
 
-export default function FakeTerminal({ toggle, setToggle }) {
+export default function FakeTerminal({ toggle }) {
   const [width, setWidth] = useState(window.innerWidth || 0);
 
-  const keyHandler = (e) => {
-    // if enter key is pressed and toggle is false
-    if (!toggle && e.key === 'Enter') {
-      setToggle(true);
-    }
-  };
-
-  // create event handlers for whole window to prevent any issue with focus.
-  useEvent('keydown', keyHandler);
-  useEvent('click', () => setToggle(true));
   useEvent('resize', () => {
     setWidth(window.innerWidth);
   });
@@ -84,5 +74,4 @@ export default function FakeTerminal({ toggle, setToggle }) {
 // type checking
 FakeTerminal.propTypes = {
   toggle: PropTypes.bool.isRequired,
-  setToggle: PropTypes.func.isRequired,
 };
